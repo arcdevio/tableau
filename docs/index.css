@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap {
+    left: 0;
+    top: 5rem;
+    position: absolute;
+}
+.bar {
+    width: 100%;
+    padding: 1rem;
+    background: lightblue;
+}
+.one {
+    border: 3px red solid;
+}
+.two {
+    border: 3px blue solid;
+}

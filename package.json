@@ -1,0 +1,11 @@
+{
+    "name": "tableau",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "http-server docs"
+    },
+    "author": "",
+    "license": "SEE LICENSE IN LICENSE",
+    "description": ""
+}

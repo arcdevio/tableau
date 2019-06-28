@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Working</title>
+
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+    <script src="./index.js" defer></script>
+
+    <style>
+        .wrap { opacity: 0; }
+    </style>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <script>
+        let one = false;
+        let two = false;
+
+        const showOne = function () {
+            if (one) {
+                one = false;
+                document.querySelector('.one').style.opacity = '0';
+            } else {
+                one = true;
+                two = false;
+                document.querySelector('.two').style.opacity = '0';
+                document.querySelector('.one').style.opacity = '1';
+            }
+        };
+
+        const showTwo = function () {
+            if (two) {
+                two = false;
+                document.querySelector('.two').style.opacity = '0';
+            } else {
+                two = true;
+                one = false;
+                document.querySelector('.one').style.opacity = '0';
+                document.querySelector('.two').style.opacity = '1';
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+
+    <div class="bar">
+        <span class="one-status">Loading One...</span>
+        <button onclick="showOne()" disabled>Show One</button>
+        <br>
+        <span class="two-status">Loading Two...</span>
+        <button onclick="showTwo()" disabled>Show Two</button>
+    </div>
+
+    <div class="wrap one"></div>
+    <div class="wrap two"></div>
+
+</body>
+</html>
