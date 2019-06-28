@@ -13,41 +13,6 @@
 
     <link rel="stylesheet" href="./index.css">
 
-    <script>
-        let one = false;
-        let two = false;
-
-        const showOne = function () {
-            const status = document.querySelector('.status');
-            if (one) {
-                one = false;
-                status.textContent = 'Showing NO Iframe';
-                document.querySelector('.one').style.display = 'none';
-            } else {
-                one = true;
-                two = false;
-                status.textContent = 'Showing ONE Iframe';
-                document.querySelector('.two').style.display = 'none';
-                document.querySelector('.one').style.display = 'block';
-            }
-        };
-
-        const showTwo = function () {
-            const status = document.querySelector('.status');
-            if (two) {
-                two = false;
-                status.textContent = 'Showing NO Iframe';
-                document.querySelector('.two').style.display = 'none';
-            } else {
-                two = true;
-                one = false;
-                status.textContent = 'Showing TWO Iframe';
-                document.querySelector('.one').style.display = 'none';
-                document.querySelector('.two').style.display = 'block';
-            }
-        };
-
-    </script>
 </head>
 <body>
 
@@ -61,8 +26,8 @@
         <span class="status">Showing NO Iframe</span>
     </div>
 
-    <div class="wrap one"></div>
-    <div class="wrap two"></div>
+    <div class="wrap one display"></div>
+    <div class="wrap two display"></div>
 
 </body>
 </html>

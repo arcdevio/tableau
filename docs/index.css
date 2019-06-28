@@ -23,6 +23,18 @@ html, body {
     align-items: center;
     background: lightblue;
 }
+.opacity {
+    opacity: 0;
+}
+.opacity.active {
+    opacity: 1;
+}
+.display {
+    display: none;
+}
+.display.active {
+    display: block;
+}
 .one {
     border: 6px lightpink solid;
 }
