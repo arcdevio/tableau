@@ -18,24 +18,30 @@
         let two = false;
 
         const showOne = function () {
+            const status = document.querySelector('.status');
             if (one) {
                 one = false;
+                status.textContent = 'Showing NO Iframe';
                 document.querySelector('.one').style.opacity = '0';
             } else {
                 one = true;
                 two = false;
+                status.textContent = 'Showing ONE Iframe';
                 document.querySelector('.two').style.opacity = '0';
                 document.querySelector('.one').style.opacity = '1';
             }
         };
 
         const showTwo = function () {
+            const status = document.querySelector('.status');
             if (two) {
                 two = false;
+                status.textContent = 'Showing NO Iframe';
                 document.querySelector('.two').style.opacity = '0';
             } else {
                 two = true;
                 one = false;
+                status.textContent = 'Showing TWO Iframe';
                 document.querySelector('.one').style.opacity = '0';
                 document.querySelector('.two').style.opacity = '1';
             }
@@ -49,9 +55,11 @@
     <div class="bar">
         <span class="one-status">Loading One...</span>
         <button onclick="showOne()" disabled>Show One</button>
-        <br>
+
         <span class="two-status">Loading Two...</span>
         <button onclick="showTwo()" disabled>Show Two</button>
+
+        <span class="status">Showing NO Iframe</span>
     </div>
 
     <div class="wrap one"></div>
