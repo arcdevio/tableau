@@ -1,6 +1,6 @@
 
 
-const url = 'http://public.tableau.com/views/RegionalSampleWorkbook/Storms';
+const url = 'https://public.tableau.com/views/RegionalSampleWorkbook/Storms';
 
 const o = new tableau.Viz(document.querySelector('.one'), url,{
     hideTabs: true,
